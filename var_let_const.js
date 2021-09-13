@@ -4,26 +4,36 @@
 //let - block scoped
 //var - function scoped
 
-function run(){
-    foo = 'Foo'
-    var bar = 'Bar'
+// function run(){
+//     foo = 'Foo'
+//     var bar = 'Bar'
 
-    console.log(foo, ' ', bar)
+//     console.log(foo, ' ', bar)
     
-    {
-        var moo = "Moo"
-        let bazz = "Bazz"
-        console.log(moo,' ',bazz)
-    }
+//     {
+//         var moo = "Moo"
+//         let bazz = "Bazz"
+//         console.log(moo,' ',bazz)
+//     }
 
-    console.log(moo)
-    // console.log(bazz)
+//     console.log(moo)
+//     // console.log(bazz)
+// }
+
+// run();
+
+// console.log(foo)
+
+
+var funcs = []
+for (let i = 0; i < 3; i++) {
+    funcs[i] = function(){
+        console.log("My Value:"+i)
+    } 
 }
 
-run();
-
-console.log(foo)
-
-
+for (var j = 0; j < 3; j++) {
+    funcs[j]();
+}
 
 
