@@ -25,15 +25,29 @@
 // console.log(foo)
 
 
-var funcs = []
-for (let i = 0; i < 3; i++) {
-    funcs[i] = function(){
-        console.log("My Value:"+i)
-    } 
-}
+// var funcs = []
+// for (var i = 0; i < 3; i++) {
+//     funcs[i] = function(){
+//         console.log("My Value:"+i)
+//     } 
+// }
 
-for (var j = 0; j < 3; j++) {
-    funcs[j]();
-}
+// for (var j = 0; j < 3; j++) {
+//     funcs[j]();
+// }
 
 
+//2. Hoisting
+// function run(){
+
+//     //var foo;
+
+//     console.log(foo)
+//     let foo = "FOO"
+// }
+// run()
+
+//3.redeclearation
+// let sun = "SUN"
+// let sun = "MOON"
+// console.log(sun)
