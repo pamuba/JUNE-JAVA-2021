@@ -21,3 +21,18 @@
 // }
 
 // sum(1,2,3,4,5,6)
+
+/////////////////////////////SPREAD OPERATOR///////////////////////
+// Math.max(24,3,9)
+
+// let arr = [24,3,9]
+// let arr1 = [11,22,33]
+
+// console.log(Math.max(...arr, ...arr1))
+
+let a = 45;
+let b = 99;
+
+[a,b] = [b,a]
+console.log(`a:${a} b:${b}`)
+
