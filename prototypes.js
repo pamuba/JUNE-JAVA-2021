@@ -37,5 +37,12 @@ let lizard = {
 }
 
 // we can borrow the sing method for lizard using bind
-const singLizard = dragon.sing.bind(lizard)
-console.log(singLizard());
+// const singLizard = dragon.sing.bind(lizard)
+// console.log(singLizard());
+
+//inherits all the props and methods from dragon
+lizard.__proto__ = dragon
+
+console.log(lizard.sing())
+console.log(lizard.fire)
+console.log(lizard.fight())
