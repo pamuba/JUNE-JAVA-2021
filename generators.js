@@ -17,3 +17,25 @@
 
 
 // console.log(gen.next().value)
+
+
+function* generator(){
+    let index = 0;
+    while(true){
+        yield index++
+    }
+}
+
+let gen = generator()
+
+console.log(gen.next().value)
+console.log(gen.next().value)
+console.log(gen.next().value)
+console.log(gen.next().value)
+console.log(gen.next().value)
+console.log(gen.next().value)
+console.log(gen.next().value)
+console.log(gen.next().value)
+console.log(gen.next().value)
+console.log(gen.next().value)
+
