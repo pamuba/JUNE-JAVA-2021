@@ -9,3 +9,6 @@
 // AngularJS : Extends HTML, reduces the amt of JS we write
 
 // it is a JS Framework that helps build web apps
+
+
+Module: Feature implementation of a project(controllers, services, pipes, ............)
