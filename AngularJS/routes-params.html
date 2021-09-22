@@ -12,22 +12,20 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.js"></script>
     <script src="angular-route.js"></script>
-    <script src="routes.js"></script>
+    <script src="routes-params.js"></script>
     <title>Document</title>
 </head>
 <body class="container">
-    An Angular App
-    <!-- <hr>
-    <a href="#!/first-msg">FIRST</a>
-    <a href="#!/second-msg">SECOND</a>
-    <div ng-view></div> -->
-
+    <div class="row">
+        <div class="col-sm-12" style="height:100%">
+            HEADER | <a href="#!/">HOME</a>
+        </div>
+    </div>
     <div class="row">
         <div class="col-sm-3" style="height:100%">
             <ul>
-                <li><a href="#!/first-msg">FIRST</a></li>
-                <li><a href="#!/second-msg">SECOND</a></li>
-                <li><a href="#!/">HOME</a></li>
+                <li><a href="#!/sumurl/10/20">SUM URL</a></li>
+                <li><a href="#!/suminput">SUM INPUT</a></li>
             </ul>
         </div>
         <div class="col-sm-9" style="height:100%">
