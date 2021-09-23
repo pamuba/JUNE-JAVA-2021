@@ -12,3 +12,8 @@
 
 
 Module: Feature implementation of a project(controllers, services, pipes, ............)
+
+Directives
+1. Components - Contains their own template
+2. Decorators - enhances the functionality of existing directives(ng-click)
+3. Templating - can add or remove elements from the DOM(ng-repeat)
