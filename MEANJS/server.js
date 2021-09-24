@@ -2,11 +2,12 @@ var express = require('express')
 var mongojs = require('mongojs')
 var db = mongojs('contactlist',['contactlist'])
 var app = express()
+app.use(express.json())
 
 
 app.use(express.static(__dirname+"/public"))
 
-
+//get
 app.get('/contactlist', function(req, res){
   
     db.contactlist.find(function(err, docs){
@@ -16,6 +17,13 @@ app.get('/contactlist', function(req, res){
             res.json(docs)
     })
     
+})
+
+//post
+app.post('/contactlist', function(req, res){
+    db.contactlist.insert(req.body, function(err, doc){
+        res.json(doc)
+    })
 })
 
 app.listen(3000, function(err){
