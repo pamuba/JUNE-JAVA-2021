@@ -26,5 +26,15 @@ function AppCtrl($scope, $http){
             refresh()
         })
     }
+    $scope.edit = function(id){
+        $http.get('/contactlist/'+id).success(function(response){
+            $scope.contact = response
+        })
+    }
+    $scope.update = function(){
+        $http.put('/contactlist/' + $scope.contact._id, $scope.contact).success(function(res){
+            refresh();
+        })
+    }
     
 }

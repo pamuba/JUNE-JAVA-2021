@@ -1,0 +1,53 @@
+Module: Login, transaction, routing
+component, service, pipe....
+
+module as a container(component, service, pipe....)
+
+app module -> app.module.ts-> root module
+
+Component: part of the view(ts, html, css, test)
+
+app component -> root component(all component are nested inside the root component)
+
+1. Property Binding
+
+Attribute Vs Property
+
+Attribute:HTML(immutable , initailizes DOM)
+
+Property: DOM 
+
+2. Class Binding
+3. Style Binding
+4. template reference variable
+
+5. Structural Directives
+*ngIf
+*ngSwitch
+*ngFor
+
+WEDNESDAY
+6. Content Projection
+7. Pipes
+8. Services(DI, Observables)
+ DRY(Do not repeat yourself)
+ Single Responsibility Principal
+ Service(Share the data)
+ DI
+ Observables returns you values over a period of time
+ Observables + http => all the values at once
+ Subscribes to Observables
+ HttpClient vs HttpClientModule
+
+9. Http calls
+10. Navigation
+11. Forms
+
+THURSDAY
+MEAN
+
+FRIDAY
+React
+
+
+

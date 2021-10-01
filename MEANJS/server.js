@@ -41,3 +41,25 @@ app.listen(3000, function(err){
     else 
         console.log("Server started @3000")
 });
+
+app.get('/contactlist/:id', function(req, res){
+    var id = req.params.id
+    db.contactlist.findOne({_id:mongojs.ObjectId(id)}, function(err, doc){
+        if(err)
+            console.log("Error Fetching Data")
+        else 
+            res.json(doc)
+    })
+})
+
+app.put('/contactlist/:id', function(req, res){
+    var id = req.params.id
+    db.contactlist.findAndModify({query:{_id:mongojs.ObjectId(id)},
+        update:{$set:{name:req.body.name, email:req.body.email, number:req.body.number}},
+        new:true}, function(err, doc){
+            if(err)
+                console.log("Error Fetching Data")
+            else 
+                res.json(doc)
+    })
+})

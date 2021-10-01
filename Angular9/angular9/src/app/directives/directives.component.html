@@ -1,0 +1,34 @@
+<!-- 
+<h2 *ngIf="displayName; else elseBlock">Hello World</h2>
+
+<ng-template #elseBlock>
+    <h2>Name is hidden</h2>
+</ng-template> -->
+
+<div *ngIf="displayName; then thenBlock; else elseBlock"></div>
+
+
+<ng-template #thenBlock>
+    <h2>The First Template</h2>
+</ng-template>
+
+<ng-template #elseBlock>
+    <h2>The Second Template</h2>
+</ng-template>
+
+<div [ngSwitch]="color">
+    <div [style.color]="color" *ngSwitchCase="'red'">RED COLOR</div>
+    <div  [style.color]="color" *ngSwitchCase="'blue'">BLUE COLOR</div>
+    <div  [style.color]="color" *ngSwitchCase="'orange'">ORANGE COLOR</div>
+    <div  [style.color]="color" *ngSwitchCase="'green'">GREEN COLOR</div>
+    <div *ngSwitchDefault>Pick Again</div>
+</div>
+<hr>
+
+<div *ngFor="let color of colors; even as l">
+    <h2 [style.color]="color">{{l}} {{color}}</h2>
+</div>
+
+
+
+
