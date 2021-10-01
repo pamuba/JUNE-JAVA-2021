@@ -1,7 +1,7 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const router = express.Router();
-// const Video = require('../models/video');
+const Video = require('../models/video');
 
 const db = "mongodb://localhost:27017/videoplayer";
 mongoose.connect(db, { useUnifiedTopology: true, useNewUrlParser: true }, (err)=>{
