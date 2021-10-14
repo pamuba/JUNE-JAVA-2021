@@ -11,3 +11,9 @@ JSX -> JS
 Fragments
 
 props(properties) and states
+
+
+hooks in react
+funcs classes
+
+setState is async
