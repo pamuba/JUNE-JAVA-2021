@@ -1,0 +1,9 @@
+Components: 
+1. Function , this, state(hooks)
+2. Class , this, state
+
+
+JSX: JS Xml
+
+we write xml like code
+JSX -> JS
