@@ -1,6 +1,9 @@
 import './App.css';
+import Counter from './componenets/Counter';
+import EventBind from './componenets/EventBind';
 import Greet from './componenets/Greet';
 import Message from './componenets/Message';
+import ParentComponent from './componenets/ParentComponent';
 import Test from './componenets/Test';
 import Welcome from './componenets/Welcome';
 
@@ -22,7 +25,13 @@ function App() {
        <Welcome name="Tony"  heroName="Iron man"></Welcome>
        <Welcome name="John"  heroName="Turtule Ninja"></Welcome> */}
 
-       <Message/>
+       {/* <Message/> */}
+
+       {/* <Counter/> */}
+
+       {/* <EventBind/> */}
+
+       <ParentComponent/>
 
       </header>
     </div>

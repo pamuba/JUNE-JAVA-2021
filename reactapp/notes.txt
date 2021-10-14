@@ -17,3 +17,7 @@ hooks in react
 funcs classes
 
 setState is async
+
+Event Binding
+
+Method as props
