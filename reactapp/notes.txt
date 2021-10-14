@@ -7,3 +7,7 @@ JSX: JS Xml
 
 we write xml like code
 JSX -> JS
+
+Fragments
+
+props(properties) and states
