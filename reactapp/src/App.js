@@ -1,10 +1,13 @@
 import './App.css';
 import Counter from './componenets/Counter';
 import EventBind from './componenets/EventBind';
+import Form from './componenets/Form';
 import Greet from './componenets/Greet';
 import Message from './componenets/Message';
+import NameList from './componenets/NameList';
 import ParentComponent from './componenets/ParentComponent';
 import Test from './componenets/Test';
+import UserGreetings from './componenets/UserGreetings';
 import Welcome from './componenets/Welcome';
 
 function App() {
@@ -31,8 +34,13 @@ function App() {
 
        {/* <EventBind/> */}
 
-       <ParentComponent/>
+       {/* <ParentComponent/> */}
 
+      {/* <UserGreetings/> */}
+
+      {/* <NameList/> */}
+
+      <Form/>
       </header>
     </div>
   );
