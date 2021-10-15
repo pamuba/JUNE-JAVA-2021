@@ -23,3 +23,33 @@ Event Binding
 Method as props
 
 Conditional Rendering
+
+Forms
+
+
+Life Cycle Methods:
+
+PHASES:
+
+Mounting: inserted into the DOM
+Updating: Rendering(states/props)
+Unmounting: removed from the DOM
+Error Handling: error during rendering
+
+Mounting: ctr, static getDerivedStateFromProps, render, componentDidMount
+Updating: static getDerivedStateFromProps, shouldComponentUpdate, render, getSnapshotBeforeUpdate, componentDidUpdate
+Unmounting: componentWillUnmount
+Error Handling: static getDerivedStateFromError, componentDidCatach
+
+
+Regular Component: A regular component  does not implement the "shouldComponentUpdate".
+it always return true
+Pure Component: A pure component implements "shouldComponentUpdate" and also
+uses SC of props and state
+
+
+Error Boundaries
+
+HOC
+
+hooks
